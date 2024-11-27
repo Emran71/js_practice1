@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Play</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <button class="btn a">a</button>
+        <button class="btn b">b</button>
+    </div>
+    <script>
+        var btn_len = document.querySelectorAll(".btn").length;
+
+for (var i = 0; i < btn_len; i++) {
+  document.querySelectorAll(".btn")[i].addEventListener("click", function () {
+    var btn_text = this.innerHTML;
+    audioplay(btn_text);
+    playAnimation(btn_text);
+  });
+}
+
+function audioplay(btn_text) {
+  switch (btn_text) {
+    case "a":
+      var audio = new Audio("audios/sound1.mp3");
+      audio.play();
+      break;
+
+    case "b":
+      var audio = new Audio("audios/sound2.mp3");
+      audio.play();
+      break;
+  }
+}
+
+function playAnimation(btn_text){
+    var element = document.querySelector("."+ btn_text);
+    element.classList.add("animation");
+    setTimeout(function(){element.classList.remove("animation")}, 1000); // Remove animation after 1 second
+}
+
+
+
+    </script>
+</body>
+</html>

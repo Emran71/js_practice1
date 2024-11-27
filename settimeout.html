@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set time</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #btn:disabled {
+            background-color: #f2f2f2;
+            cursor: not-allowed;
+        }
+        #btn:focus {
+            outline: none;
+        }
+        #btn:active {
+            background-color: #45a049;
+        }
+       .content {
+         font-size: 18px;
+         margin-top: 20px;
+         color: #00ff4c;
+         transition: color 0.3s ease;
+         cursor: pointer;
+         user-select: none;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         -o-user-select: none;
+         -webkit-tap-highlight-color: transparent;
+         -webkit-touch-callout: none;
+         -webkit-user-drag: none;
+         -webkit-user-select: none;
+         -moz-user-select: none;
+         -ms-user-select: none;
+         -o-user-select: none;
+         -moz-user-drag: none;
+         -ms-touch-action: none;
+         touch-action: none;
+       }
+    </style>
+</head>
+<body>
+    <button type="submit" id="btn">Register</button>
+    <p class="content"></p>
+    <script src="/js/time.js"></script>
+</body>
+</html>

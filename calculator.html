@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <Style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        input[type="number"] {
+            width: 100px;
+            padding: 5px;
+            margin: 5px;
+        }
+        select {
+            width: 50px;
+            padding: 5px;
+            margin: 5px;
+        }
+        button {
+            padding: 5px 10px;
+            margin: 5px;
+        }
+        p {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        #calculate {
+            background-color: lightblue;
+            color: white;
+        }
+        #result {
+            margin-top: 10px;
+        }
+        /* Add your CSS styles here */
+    </Style>
+</head>
+<body>
+    <!-- just 3 input -->
+     <input type="number" id="num1" placeholder="Enter first number">
+     <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+     <input type="number" id="num2" placeholder="Enter second number">
+     
+     <button id="calculate">Calculate</button>
+     <p id="result">Show Here</p>
+    
+     <script src="/scripts.js"></script>
+</body>
+</html>

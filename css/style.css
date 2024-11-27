@@ -1,0 +1,16 @@
+.header{
+    text-align: center;
+}
+.btn{
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: coral;
+}
+.animation{
+    box-shadow: 0 15px 18px tomato;
+    animation: move 2s infinite;
+    animation-timing-function: ease-in-out;   
+}
